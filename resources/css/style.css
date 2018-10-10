@@ -27,6 +27,15 @@ p {
   color: rgb(74, 74, 74);
   font-size: 1rem;
 }
+span {
+  color: inherit;
+  margin: 0;
+  text-align: left;
+}
+pre {
+  color: inherit;
+  margin-bottom: 0;
+}
 
 #main {
   margin-top: 1.25rem;
@@ -43,5 +52,10 @@ p {
   justify-content: center;
   cursor: pointer;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 0.6rem;
+}
+.internal {
+  color: inherit;
+  display: flex;
+  justify-content: center;
 }

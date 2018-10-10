@@ -66,12 +66,13 @@ MatchGame.flipCard = function($card, $game) {
   };
 
   $card.css("background-color", $card.data('color'));
-  if ($card.data('value') === 1){
-    $card.text('a');
+  /* logic to determine animal art */
+    if ($card.data('value') === 1){
+      $card.append('<div class = "internal"><span><pre>  __________</pre><pre> / ___  ___ \\</pre><pre>/ / @ \\/ @ \\ \\</pre><pre>\\ \\___/\\___/ /\\</pre><pre> \\____\\/____/||</pre><pre> /     /\\\\\\\\\\//</pre><pre>|     |\\\\\\\\\\\\</pre><pre> \\      \\\\\\\\\\\\</pre><pre>   \\______/\\\\\\\\</pre><pre>    _||_||_</pre></span></div>');
   } else if ($card.data('value') === 2){
     $card.text('b');
   }
-  //$card.text($card.data('value'));
+
   $card.data('flipped', true);
   $game.data('flippedCards').push($card);
 
