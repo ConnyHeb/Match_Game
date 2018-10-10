@@ -5,6 +5,12 @@ html {
 }
 body {
   background-color: rgb(255, 242, 242);
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1, h2 {
@@ -23,7 +29,7 @@ p {
 }
 
 #main {
-  margin-top: 5.25rem;
+  margin-top: 1.25rem;
 }
 
 /* cards */
