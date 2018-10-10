@@ -66,7 +66,12 @@ MatchGame.flipCard = function($card, $game) {
   };
 
   $card.css("background-color", $card.data('color'));
-  $card.text($card.data('value'));
+  if ($card.data('value') === 1){
+    $card.text('a');
+  } else if ($card.data('value') === 2){
+    $card.text('b');
+  }
+  //$card.text($card.data('value'));
   $card.data('flipped', true);
   $game.data('flippedCards').push($card);
 
