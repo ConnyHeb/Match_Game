@@ -70,7 +70,19 @@ MatchGame.flipCard = function($card, $game) {
     if ($card.data('value') === 1){
       $card.append('<div class = "internal"><span><pre>  __________</pre><pre> / ___  ___ \\</pre><pre>/ / @ \\/ @ \\ \\</pre><pre>\\ \\___/\\___/ /\\</pre><pre> \\____\\/____/||</pre><pre> /     /\\\\\\\\\\//</pre><pre>|     |\\\\\\\\\\\\</pre><pre> \\      \\\\\\\\\\\\</pre><pre>   \\______/\\\\\\\\</pre><pre>    _||_||_</pre></span></div>');
   } else if ($card.data('value') === 2){
-    $card.text('b');
+    $card.append('<div class="internal"><span><pre>       .="=.</pre><pre>     _/.-.-.\\_    _</pre><pre>    ( ( o o ) )   ))</pre><pre>     |/  "  \\|   //</pre><pre>      \\\'---\'/   //</pre><pre>jgs   /`"""`\\\\ ((</pre><pre>     / /_,_\\ \\\\ \\\\</pre><pre>     \\_\\\\_\'__/ \ ))</pre><pre>     /`  /`~\\  |//</pre><pre>    /   /    \\  /</pre><pre>,--`,--\'\\/\\    /</pre><pre> \'-- "--\'  \'--\'</pre></span></div>');
+  } else if ($card.data('value') === 3){
+    $card.append('<div class="internal"><span><pre>   ()</pre><pre>   ))    ((</pre><pre>  //      \\\\</pre><pre> | \\\\____// |</pre><pre>\\~/ ~    ~\\/~~/</pre><pre> (|    _/o  ~~</pre><pre>  /  /     ,|</pre><pre> (~~~)__.-\\ |</pre><pre>  ``~~    | |</pre><pre>   |      | |</pre></span></div>');
+  } else if ($card.data('value') === 4){
+    $card.append('<div class="internal"><span><pre>                     .</pre><pre>                    / V\\</pre><pre>                  / `  /</pre><pre>                 &lt;&lt;   |</pre><pre>                 /    |</pre><pre>               /      |</pre><pre>             /        |</pre><pre>           /    \\  \\ /</pre><pre>          (      ) | |</pre><pre>  ________|   _/_  | |</pre><pre>&lt;__________\\______)\\__)</pre></span></div>');
+  } else if ($card.data('value') === 5){
+    $card.append('<div class="internal"><span><pre>             ,-._</pre><pre>           _.-\'  \'--.</pre><pre>         .\'      _  -`\\_</pre><pre>        / .----.`_.\'----\'</pre><pre>        ;/     `</pre><pre> jgs   /_;</pre><pre></pre><pre>    ._      ._      ._      </pre><pre>_.-._)`\\_.-._)`\\_.-._)`\\_.</pre></span></div>');
+  } else if ($card.data('value') === 6){
+    $card.append('<div class="internal"><span><pre>     _.-- ,.--.</pre><pre>   .\'   .\'    /</pre><pre>   | @       |\'..--------._</pre><pre>  /      \\._/              \'.</pre><pre> /  .-.-                     \\</pre><pre>(  /    \\                     \\</pre><pre> \\\\      \'.                  | #</pre><pre>  \\\\       \\   -.           /</pre><pre>   :\\       |    )._____.\'   \\</pre><pre>    "       |   /  \\  |  \\    )</pre><pre>      snd   |   |./\'  :__ \\.-\'</pre><pre>            \'--\'</pre></span></div>');
+  } else if ($card.data('value') === 7){
+    $card.append('<div class="internal"><span><pre>      ,_     _,</pre><pre>      |\\\\___//|</pre><pre>      |=6   6=|</pre><pre>      \\=._Y_.=/</pre><pre>       )  `  (    ,</pre><pre>      /       \\  ((</pre><pre>      |       |   ))</pre><pre>     /| |   | |\\_//</pre><pre>jgs  \\| |._.| |/-`</pre><pre>      \'"\'   \'"\'</pre></span></div>');
+  } else if ($card.data('value') === 8){
+    $card.append('<div class="internal"><span><pre>    .--.              .--.</pre><pre>   : (\\ ". _......_ ." /) :</pre><pre>    \'.    `        `    .\'</pre><pre>     /\'   _        _   `\\</pre><pre>    /     0}      {0     \\</pre><pre>   |       /      \\       |</pre><pre>   |     /\'        `\\     |</pre><pre>    \\   | .  .==.  . |   /</pre><pre>     \'._ \\.\' \\__/ \'./ _.\'</pre><pre>jgs  /  ``\'._-\'\'-_.\'``  \\</pre></span></div>');
   }
 
   $card.data('flipped', true);
