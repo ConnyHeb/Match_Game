@@ -65,3 +65,16 @@ pre {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 960px) {
+  .card {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    font-size: 0.4rem;
+    height: 6.5rem;
+  }
+}
